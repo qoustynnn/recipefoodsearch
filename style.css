@@ -11,6 +11,7 @@ body {
     font-weight: 300;
     font-size: 1.05rem;
     line-height: 1.6;
+    background-color: #f5fbf8;
 }
 
 .btn {
@@ -24,6 +25,7 @@ body {
 .title {
     font-size: 2rem;
     margin-bottom: 1rem;
+    font-weight: 800;
 }
 
 .container {
@@ -48,12 +50,12 @@ body {
     padding: 0 1rem;
     font-size: 1.1rem;
     outline: 0;
-    border: 1px solid blue;
+    border: 1.75px solid #376b56;
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
 }
 .search-control::placeholder {
-    color: ;
+    color: #f5fbf8;
 }
 .search-btn{
     width: 55px;
@@ -78,6 +80,7 @@ body {
     margin: 2.4rem 0;
 }
 .meal-item{
+    background-color: #f5fbf8;
     margin-bottom: 1rem;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
@@ -85,7 +88,19 @@ body {
     -ms-border-radius:1rem;
     -o-border-radius:1rem;
     overflow: hidden;
-    box-shadow: 0 4px 21px -1px rgba(0, 0, 0, 0.315);
+    transition: box-shadow 0.5s ease;
+    -webkit-transition: box-shadow 0.5s ease;
+    -moz-transition: box-shadow 0.5s ease;
+    -ms-transition: box-shadow 0.5s ease;
+    -o-transition: box-shadow 0.5s ease;
+    box-shadow: -13px 16px 0px 3px rgba(55,107,86,1);
+    -webkit-box-shadow: -13px 16px 0px 3px rgba(55,107,86,1);
+    -moz-box-shadow: -13px 16px 0px 3px rgba(55,107,86,1);
+}
+.meal-item:hover{
+    box-shadow: -19px 16px 0px 3px rgba(55,107,86,1);
+    -webkit-box-shadow: -19px 16px 0px 3px rgba(55,107,86,1);
+    -moz-box-shadow: -19px 16px 0px 3px rgba(55,107,86,1);
 }
 .meal-item img {
     width: 100%;
@@ -99,8 +114,8 @@ body {
 }
 .recipe-btn{
     text-decoration: none;
-    color: ;
-    background: ;
+    color: #fff;
+    background-color: #376b56;
     font-weight: 500;
     font-size: 1.1rem;
     padding: 0.75rem 0;
@@ -131,8 +146,8 @@ body {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    color: ;
-    background: ;
+    color: #2f2f2f;
+    background: #f5fbf8;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -145,10 +160,10 @@ body {
     padding: 2rem 0;
 }
 .meal-details::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 .meal-details::-webkit-scrollbar-thumb {
-    background: #fff ;
+    background: #2f2f2f ;
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
@@ -189,9 +204,9 @@ body {
 }
 
 .recipe-category {
-    background: #fff;
+    background: #376b56;
     font-weight: 600;
-    color: ;
+    color: #f5fbf8;
     display: inline-block;
     padding: 0.2rem 0.5rem;
     border-radius: 0.3rem;
